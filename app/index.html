@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Interview exercise</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="app.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="controller">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button class="btn btn-primary" ng-click="getPrevious()">Previous</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img ng-src="{{image.path}}" alt="Image"/>
+                        <span>{{image.name}}</span>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary" ng-click="getNext()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
